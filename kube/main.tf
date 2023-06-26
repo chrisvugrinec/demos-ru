@@ -1,12 +1,6 @@
-# Generate random resource group name
-resource "random_pet" "rg_name" {
-   default = "HIER JOUW RG NAME"
-}
-
-
 resource "azurerm_resource_group" "rg" {
-  location = var.resource_group_location
-  name     = random_pet.rg_name.id
+  location = var.location
+  name     = var.rg-name
 }
 
 resource "random_pet" "azurerm_kubernetes_cluster_name" {

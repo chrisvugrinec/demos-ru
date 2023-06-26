@@ -1,3 +1,11 @@
+variable "location" {
+  default = "westeurope"
+}
+
+variable "rg-name" {
+  default = "JOUW RG NAME"
+}
+
 variable "resource_group_location" {
   type        = string
   default     = "westeurope"
