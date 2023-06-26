@@ -2,8 +2,8 @@ variable "location" {
   default = "westeurope"
 }
 
-variable "rg-name" {
-  default = "JOUW RG NAME"
+data "azurerm_resource_group" "rg" {
+  name = "JOUW RG NAAM"
 }
 
 variable "resource_group_location" {
